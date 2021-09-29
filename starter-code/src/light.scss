@@ -66,4 +66,13 @@
   .main-container {
     box-shadow: 0 3px 10px 3px #c4c9e470;
   }
+  .twitter-placeholder,
+  .location-placeholder,
+  .git-placeholder,
+  .company-placeholder {
+    color: $blueGray;
+  }
+  .not-available {
+    color: #a8b5cc;
+  }
 }

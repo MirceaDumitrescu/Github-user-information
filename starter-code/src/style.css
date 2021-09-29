@@ -130,6 +130,17 @@ h4 {
           box-shadow: 0 3px 10px 3px #c4c9e470;
 }
 
+.light--theme .twitter-placeholder,
+.light--theme .location-placeholder,
+.light--theme .git-placeholder,
+.light--theme .company-placeholder {
+  color: #697c9a;
+}
+
+.light--theme .not-available {
+  color: #a8b5cc;
+}
+
 /* Colors */
 /* Light Theme Colors */
 /* Dark Theme Colors */
@@ -415,10 +426,14 @@ body {
 
 .search-container .search-error {
   position: absolute;
-  right: 15%;
+  right: 19%;
   color: red;
   font-weight: bold;
   display: none;
+}
+
+.error-visible {
+  display: block !important;
 }
 
 .main-container {
@@ -489,6 +504,7 @@ body {
   display: flex;
   -ms-flex-item-align: baseline;
       align-self: baseline;
+  width: 30%;
 }
 
 .main-container .user-avatar img {
@@ -503,6 +519,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .username_description {
@@ -526,6 +545,11 @@ body {
           align-items: center;
   justify-content: space-between;
   margin-top: 1rem;
+}
+
+.footer-container .icon-container {
+  width: 30px;
+  height: 20px;
 }
 
 .footer-container .location-container,
@@ -594,6 +618,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     margin-top: 3%;
     margin-left: 30%;
   }
@@ -606,6 +633,16 @@ body {
 @media screen and (max-width: 590px) {
   .website-content {
     width: 327px;
+  }
+  .search-error {
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    display: block !important;
+    font-size: 12px;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    right: 30% !important;
   }
   .main-container {
     position: relative;
