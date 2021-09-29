@@ -1,0 +1,43 @@
+/* Colors */
+/* Light Theme Colors */
+$brightBlue: #0078ff;
+$whiteBackground: #fefefe;
+$lightBG: #f6f8ff;
+$blueGray: #697c9a;
+$grayBlue: #4b6a9b;
+$lightBlack: #2b3442;
+
+/* Dark Theme Colors */
+
+$darkBlack: #141d2f;
+$darkBlue: #1e2a47;
+
+@mixin display-flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 33px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: $brightBlue;
+}
+
+h4 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: regular;
+}

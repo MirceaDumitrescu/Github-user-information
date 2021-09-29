@@ -1,0 +1,679 @@
+/* Colors */
+/* Light Theme Colors */
+/* Dark Theme Colors */
+h1 {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 33px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0078ff;
+}
+
+h4 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: regular;
+}
+
+.light--theme {
+  background: #f6f8ff;
+}
+
+.light--theme .search-container {
+  background: #fefefe;
+}
+
+.light--theme .main-container {
+  background: #fefefe;
+}
+
+.light--theme .theme__dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.light--theme .theme__dark:hover .theme__dark__icon path {
+  fill: #2b3442;
+}
+
+.light--theme .theme__dark:hover .theme__dark__text {
+  color: #2b3442;
+}
+
+.light--theme .theme__dark .theme__dark__icon {
+  margin-left: 20px;
+}
+
+.light--theme .theme__dark .theme__dark__icon path {
+  fill: #4b6a9b;
+}
+
+.light--theme .theme__dark .theme__dark__text {
+  color: #4b6a9b;
+}
+
+.light--theme .theme__light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.light--theme .repo_info_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85px;
+  background: #f6f8ff;
+  border-radius: 15px;
+}
+
+.light--theme .repo_info_container h4 {
+  color: #697c9a;
+}
+
+.light--theme .repo_info_container h1 {
+  color: #2b3442;
+}
+
+.light--theme .repo_info_container .following {
+  width: 25%;
+}
+
+.light--theme .username_description {
+  color: #697c9a;
+}
+
+.light--theme .search-container {
+  -webkit-box-shadow: 0 3px 10px 3px #c4c9e470;
+          box-shadow: 0 3px 10px 3px #c4c9e470;
+}
+
+.light--theme .main-container {
+  -webkit-box-shadow: 0 3px 10px 3px #c4c9e470;
+          box-shadow: 0 3px 10px 3px #c4c9e470;
+}
+
+/* Colors */
+/* Light Theme Colors */
+/* Dark Theme Colors */
+h1 {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 33px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0078ff;
+}
+
+h4 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: regular;
+}
+
+.dark--theme {
+  background: #141d2f;
+}
+
+.dark--theme .search-container {
+  background: #1e2a47;
+}
+
+.dark--theme .main-container {
+  background: #1e2a47;
+}
+
+.dark--theme .theme__light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.dark--theme .theme__light:hover .theme__light__icon path {
+  fill: #4b6a9b;
+}
+
+.dark--theme .theme__light:hover .theme__light__text {
+  color: #4b6a9b;
+}
+
+.dark--theme .theme__light .theme__light__icon {
+  margin-left: 20px;
+}
+
+.dark--theme .theme__light .theme__light__icon path {
+  fill: #f6f8ff;
+}
+
+.dark--theme .theme__light .theme__light__text {
+  color: #f6f8ff;
+}
+
+.dark--theme .theme__dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.dark--theme .repo_info_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85px;
+  background: #141d2f;
+  border-radius: 15px;
+}
+
+.dark--theme .repo_info_container h4 {
+  color: #f6f8ff;
+}
+
+.dark--theme .repo_info_container h1 {
+  color: #f6f8ff;
+}
+
+.dark--theme .repo_info_container .following {
+  width: 25%;
+}
+
+.dark--theme .username_description {
+  color: #f6f8ff;
+}
+
+.dark--theme .search-container {
+  -webkit-box-shadow: 0 3px 10px 3px #101724;
+          box-shadow: 0 3px 10px 3px #101724;
+}
+
+.dark--theme .main-container {
+  -webkit-box-shadow: 0 3px 10px 3px #101724;
+          box-shadow: 0 3px 10px 3px #101724;
+}
+
+.dark--theme .input__field {
+  background: #1e2a47;
+  color: #f6f8ff;
+}
+
+.dark--theme .input__field::-webkit-input-placeholder {
+  color: #f6f8ff;
+}
+
+.dark--theme .input__field:-ms-input-placeholder {
+  color: #f6f8ff;
+}
+
+.dark--theme .input__field::-ms-input-placeholder {
+  color: #f6f8ff;
+}
+
+.dark--theme .input__field::placeholder {
+  color: #f6f8ff;
+}
+
+.dark--theme .logo {
+  color: #f6f8ff;
+}
+
+.dark--theme h1 {
+  color: #f6f8ff;
+}
+
+.dark--theme h3,
+.dark--theme h4 {
+  color: #b5bdca;
+}
+
+.dark--theme .location-container .inactive,
+.dark--theme .github-link-container .inactive,
+.dark--theme .twitter-container .inactive,
+.dark--theme .company-container .inactive {
+  color: #737b8b;
+}
+
+/* Colors */
+/* Light Theme Colors */
+/* Dark Theme Colors */
+h1 {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 33px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0078ff;
+}
+
+h4 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: regular;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono";
+}
+
+.website-content {
+  position: relative;
+  width: 730px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5%;
+}
+
+.header__theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__theme img {
+  width: 20px;
+  height: 20px;
+}
+
+.logo {
+  letter-spacing: -2px;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 38px;
+}
+
+.search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  height: 69px;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+}
+
+.search-container .search-error {
+  position: absolute;
+  right: 15%;
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.main-container {
+  border-radius: 15px;
+  margin-bottom: 5rem;
+}
+
+.search__input__form {
+  width: 100%;
+  display: start;
+  margin-left: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.input__field {
+  font-family: "Space Mono";
+  font-weight: regular;
+  font-size: 18px;
+  width: 80%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search__button {
+  background: #0078ff;
+  border: none;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 15px;
+  color: white;
+  font-family: "Space Mono";
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search__button:hover {
+  -webkit-filter: brightness(140%);
+          filter: brightness(140%);
+}
+
+.search__button p {
+  pointer-events: none;
+}
+
+.main-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+.main-container .user-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.main-container .user-avatar img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.main-container .main__username__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.username_description {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.footer-container .location-container,
+.footer-container .github-link-container,
+.footer-container .twitter-container,
+.footer-container .company-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 0.5rem;
+  color: #697c9a;
+  cursor: pointer;
+}
+
+.footer-container .location-container:hover,
+.footer-container .github-link-container:hover,
+.footer-container .twitter-container:hover,
+.footer-container .company-container:hover {
+  text-decoration: underline;
+}
+
+.footer-container .location-container img,
+.footer-container .github-link-container img,
+.footer-container .twitter-container img,
+.footer-container .company-container img {
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 768px) and (min-width: 591px) {
+  .website-content {
+    width: 573px;
+  }
+  .main-container {
+    position: relative;
+    display: block;
+    padding: 2rem;
+    width: 100%;
+  }
+  .user-avatar {
+    width: 30%;
+    float: left;
+    position: relative;
+  }
+  .user-avatar img {
+    width: 50%;
+    border-radius: 50%;
+  }
+  .main__username__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 3%;
+    margin-left: 30%;
+  }
+  .username_description {
+    padding-top: 3.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .website-content {
+    width: 327px;
+  }
+  .main-container {
+    position: relative;
+    display: block;
+    padding: 2rem;
+    width: 100%;
+  }
+  .footer-container {
+    display: block;
+  }
+  .main__username__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 30%;
+  }
+  .main__username__container h1 {
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .main__username__container h3 {
+    color: #0078ff;
+    font-size: 13px;
+  }
+  .username_description {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .user-avatar {
+    width: 35%;
+    float: left;
+    position: relative;
+    margin-top: 3%;
+  }
+  .user-avatar img {
+    width: 50%;
+    border-radius: 50%;
+  }
+  .repo_info_container {
+    text-align: center;
+  }
+  .repo_info_container h4 {
+    font-size: 11px;
+  }
+  .repo_info_container h1 {
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .search__input__form {
+    margin-left: 0.2rem;
+  }
+  .input__field {
+    font-size: 13px;
+    width: 95%;
+  }
+  .theme__dark .theme__dark__icon {
+    margin-left: 5px;
+  }
+  .theme__light .theme__light__icon {
+    margin-left: 5px;
+  }
+  .header__theme img {
+    width: 10px;
+    height: 10px;
+  }
+  .header__theme h2 {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

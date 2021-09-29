@@ -1,0 +1,26 @@
+/* Colors */
+/* Light Theme Colors */
+/* Dark Theme Colors */
+h1 {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 33px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0078ff;
+}
+
+h4 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: regular;
+}
+/*# sourceMappingURL=variables.css.map */

@@ -1,0 +1,98 @@
+@import "variables";
+
+.dark--theme {
+  background: $darkBlack;
+
+  .search-container {
+    background: $darkBlue;
+  }
+
+  .main-container {
+    background: $darkBlue;
+  }
+  .theme__light {
+    @include display-flex-center;
+    cursor: pointer;
+    &:hover {
+      .theme__light__icon path {
+        fill: $grayBlue;
+      }
+      .theme__light__text {
+        color: $grayBlue;
+      }
+    }
+    .theme__light__icon {
+      margin-left: 20px;
+      path {
+        fill: $lightBG;
+      }
+    }
+    .theme__light__text {
+      color: $lightBG;
+    }
+  }
+
+  .theme__dark {
+    @include display-flex-center;
+    display: none;
+  }
+
+  .repo_info_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    background: $darkBlack;
+    border-radius: 15px;
+    h4 {
+      color: $lightBG;
+    }
+    h1 {
+      color: $lightBG;
+    }
+    .following {
+      width: 25%;
+    }
+  }
+
+  .username_description {
+    color: $lightBG;
+  }
+  .search-container {
+    box-shadow: 0 3px 10px 3px #101724;
+  }
+
+  .main-container {
+    box-shadow: 0 3px 10px 3px #101724;
+  }
+
+  .input__field {
+    background: $darkBlue;
+    color: $lightBG;
+    &::placeholder {
+      color: $lightBG;
+    }
+  }
+
+  .logo {
+    color: $lightBG;
+  }
+
+  h1 {
+    color: $lightBG;
+  }
+
+  h3,
+  h4 {
+    color: #b5bdca;
+  }
+
+  .location-container,
+  .github-link-container,
+  .twitter-container,
+  .company-container {
+    .inactive {
+      color: #737b8b;
+    }
+  }
+}

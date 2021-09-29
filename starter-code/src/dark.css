@@ -1,0 +1,173 @@
+/* Colors */
+/* Light Theme Colors */
+/* Dark Theme Colors */
+h1 {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 33px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0078ff;
+}
+
+h4 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: regular;
+}
+
+.dark--theme {
+  background: #141d2f;
+}
+
+.dark--theme .search-container {
+  background: #1e2a47;
+}
+
+.dark--theme .main-container {
+  background: #1e2a47;
+}
+
+.dark--theme .theme__light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.dark--theme .theme__light:hover .theme__light__icon path {
+  fill: #4b6a9b;
+}
+
+.dark--theme .theme__light:hover .theme__light__text {
+  color: #4b6a9b;
+}
+
+.dark--theme .theme__light .theme__light__icon {
+  margin-left: 20px;
+}
+
+.dark--theme .theme__light .theme__light__icon path {
+  fill: #f6f8ff;
+}
+
+.dark--theme .theme__light .theme__light__text {
+  color: #f6f8ff;
+}
+
+.dark--theme .theme__dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.dark--theme .repo_info_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85px;
+  background: #141d2f;
+  border-radius: 15px;
+}
+
+.dark--theme .repo_info_container h4 {
+  color: #f6f8ff;
+}
+
+.dark--theme .repo_info_container h1 {
+  color: #f6f8ff;
+}
+
+.dark--theme .repo_info_container .following {
+  width: 25%;
+}
+
+.dark--theme .username_description {
+  color: #f6f8ff;
+}
+
+.dark--theme .search-container {
+  -webkit-box-shadow: 0 3px 10px 3px #101724;
+          box-shadow: 0 3px 10px 3px #101724;
+}
+
+.dark--theme .main-container {
+  -webkit-box-shadow: 0 3px 10px 3px #101724;
+          box-shadow: 0 3px 10px 3px #101724;
+}
+
+.dark--theme .input__field {
+  background: #1e2a47;
+  color: #f6f8ff;
+}
+
+.dark--theme .input__field::-webkit-input-placeholder {
+  color: #f6f8ff;
+}
+
+.dark--theme .input__field:-ms-input-placeholder {
+  color: #f6f8ff;
+}
+
+.dark--theme .input__field::-ms-input-placeholder {
+  color: #f6f8ff;
+}
+
+.dark--theme .input__field::placeholder {
+  color: #f6f8ff;
+}
+
+.dark--theme .logo {
+  color: #f6f8ff;
+}
+
+.dark--theme h1 {
+  color: #f6f8ff;
+}
+
+.dark--theme h3,
+.dark--theme h4 {
+  color: #b5bdca;
+}
+
+.dark--theme .location-container .inactive,
+.dark--theme .github-link-container .inactive,
+.dark--theme .twitter-container .inactive,
+.dark--theme .company-container .inactive {
+  color: #737b8b;
+}
+/*# sourceMappingURL=dark.css.map */

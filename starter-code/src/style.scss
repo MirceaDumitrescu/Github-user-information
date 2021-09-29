@@ -1,0 +1,252 @@
+@import "light", "dark", "variables";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono";
+}
+
+.website-content {
+  position: relative;
+  width: 730px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.header {
+  @include display-flex-center;
+  margin-bottom: 5%;
+}
+
+.header__theme {
+  @include display-flex-center;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.logo {
+  letter-spacing: -2px;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 38px;
+}
+
+.search-container {
+  @include display-flex-center;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  height: 69px;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  .search-error {
+    position: absolute;
+    right: 15%;
+    color: red;
+    font-weight: bold;
+    display: none;
+  }
+}
+
+.main-container {
+  border-radius: 15px;
+  margin-bottom: 5rem;
+}
+
+.search__input__form {
+  width: 100%;
+  display: start;
+  margin-left: 2rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.input__field {
+  font-family: "Space Mono";
+  font-weight: regular;
+  font-size: 18px;
+  width: 80%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search__button {
+  background: $brightBlue;
+  border: none;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 15px;
+  color: white;
+  font-family: "Space Mono";
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(140%);
+  }
+  p {
+    pointer-events: none;
+  }
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  .user-avatar {
+    display: flex;
+    align-self: baseline;
+  }
+  .user-avatar img {
+    width: 80%;
+    border-radius: 50%;
+  }
+  .main__username__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.username_description {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer-container {
+  @include display-flex-center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  .location-container,
+  .github-link-container,
+  .twitter-container,
+  .company-container {
+    @include display-flex-center;
+    justify-content: start;
+    padding: 0.5rem;
+    color: $blueGray;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+    img {
+      padding-right: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 591px) {
+  .website-content {
+    width: 573px;
+  }
+  .main-container {
+    position: relative;
+    display: block;
+    padding: 2rem;
+    width: 100%;
+  }
+  .user-avatar {
+    width: 30%;
+    float: left;
+    position: relative;
+  }
+  .user-avatar img {
+    width: 50%;
+    border-radius: 50%;
+  }
+  .main__username__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-left: 30%;
+  }
+  .username_description {
+    padding-top: 3.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .website-content {
+    width: 327px;
+  }
+  .main-container {
+    position: relative;
+    display: block;
+    padding: 2rem;
+    width: 100%;
+  }
+  .footer-container {
+    display: block;
+  }
+  .main__username__container {
+    flex-direction: column;
+    margin-left: 30%;
+    h1 {
+      font-size: 16px;
+      font-weight: 800;
+    }
+    h3 {
+      color: $brightBlue;
+      font-size: 13px;
+    }
+  }
+  .username_description {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .user-avatar {
+    width: 35%;
+    float: left;
+    position: relative;
+    margin-top: 3%;
+  }
+  .user-avatar img {
+    width: 50%;
+    border-radius: 50%;
+  }
+
+  .repo_info_container {
+    text-align: center;
+    h4 {
+      font-size: 11px;
+    }
+    h1 {
+      font-size: 16px;
+      font-weight: 800;
+    }
+  }
+  .search__input__form {
+    margin-left: 0.2rem;
+  }
+  .input__field {
+    font-size: 13px;
+    width: 95%;
+  }
+  .theme__dark {
+    .theme__dark__icon {
+      margin-left: 5px;
+    }
+  }
+  .theme__light {
+    .theme__light__icon {
+      margin-left: 5px;
+    }
+  }
+
+  .header__theme {
+    img {
+      width: 10px;
+      height: 10px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
