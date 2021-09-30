@@ -41,66 +41,53 @@ function requestUserRepos(username) {
     // Parse API data into JSON
     const data = JSON.parse(this.response);
 
-    // Log the response
-    let link = data.html_url;
-    let company = data.company;
     let joindate = moment(data.created_at).format("D MMM YYYY");
-    let avatar = data.avatar_url;
-    let desc = data.bio;
-    let followers = data.followers;
-    let following = data.following;
-    let location = data.location;
-    let name = data.name;
-    let tag = data.login;
-    let repos = data.public_repos;
-    let twitter = data.twitter_username;
-    let error = data.message;
-    if (error === "Not Found") {
+    if (data.message === "Not Found") {
       searchError.classList.add("error-visible");
       console.log("Username Not Found.");
       inputForm.reset();
     } else {
-      // searchError.classList.remove("error-visible");
-      userName.innerHTML = name;
-      if (name === null) {
-        userName.innerHTML = tag;
+      searchError.classList.remove("error-visible");
+      userName.innerHTML = data.name;
+      if (data.name === null) {
+        userName.innerHTML = data.tag;
         userName.classList.add("not-available");
       } else {
-        userName.innerHTML = name;
+        userName.innerHTML = data.name;
       }
-      userTag.innerHTML = "@" + tag;
+      userTag.innerHTML = "@" + data.tag;
       joinDate.innerHTML = "Joined " + joindate;
-      description.innerHTML = desc;
-      if (desc === null) {
+      description.innerHTML = data.bio;
+      if (data.bio === null) {
         description.innerHTML = "This user has no profile description!";
         description.classList.add("not-available");
       } else {
-        description.innerHTML = desc;
+        description.innerHTML = data.bio;
       }
-      userAvatar.src = avatar;
-      reposInfo.innerHTML = repos;
-      locationIcon.innerHTML = location;
-      if (location === null) {
+      userAvatar.src = data.avatar_url;
+      reposInfo.innerHTML = data.public_repos;
+      locationIcon.innerHTML = data.location;
+      if (data.location === null) {
         locationIcon.innerHTML = "Not Available";
         locationIcon.classList.add("not-available");
       } else {
-        locationIcon.innerHTML = location;
+        locationIcon.innerHTML = data.location;
       }
-      github.innerHTML = link;
-      companyName.innerHTML = company;
-      if (company === null) {
+      github.innerHTML = `<a href=${data.html_url} target="_blank">${data.html_url}</a>`;
+      companyName.innerHTML = data.company;
+      if (data.company === null) {
         companyName.innerHTML = "Not Available";
         companyName.classList.add("not-available");
       } else {
-        companyName.innerHTML = company;
+        companyName.innerHTML = data.company;
       }
-      followersInfo.innerHTML = followers;
-      followingInfo.innerHTML = following;
-      if (twitter === null) {
+      followersInfo.innerHTML = data.followers;
+      followingInfo.innerHTML = data.following;
+      if (data.twitter_username === null) {
         twitterInfo.innerHTML = "Not Available";
         twitterInfo.classList.add("not-available");
       } else {
-        twitterInfo.innerHTML = twitter;
+        twitterInfo.innerHTML = data.twitter_username;
       }
     }
   };
@@ -130,16 +117,6 @@ inputField.addEventListener("keypress", (e) => {
     }
   }
 });
-// inputField.addEventListener("submit", requestUserRepos(inputField.value));
-
-// function getData() {
-//   let username = inputField.value;
-//   inputForm.reset();
-//   inputForm.preventDefault();
-//   const data = requestUserRepos(username);
-//   console.log(data.company);
-// }
-requestUserRepos("zenandreas");
 
 function getOS() {
   var userAgent = window.navigator.userAgent,
@@ -174,3 +151,4 @@ function getOS() {
 }
 
 getOS();
+requestUserRepos("zenandreas");

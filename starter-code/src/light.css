@@ -22,6 +22,7 @@ h4 {
   font-size: 13px;
   line-height: 20px;
   font-weight: regular;
+  width: 100%;
 }
 
 .light--theme {
@@ -139,5 +140,11 @@ h4 {
 
 .light--theme .not-available {
   color: #a8b5cc;
+}
+
+.light--theme .footer {
+  color: #697c9a;
+  font-size: 13px;
+  text-align: center;
 }
 /*# sourceMappingURL=light.css.map */
