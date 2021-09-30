@@ -50,12 +50,12 @@ function requestUserRepos(username) {
       searchError.classList.remove("error-visible");
       userName.innerHTML = data.name;
       if (data.name === null) {
-        userName.innerHTML = data.tag;
+        userName.innerHTML = data.login;
         userName.classList.add("not-available");
       } else {
         userName.innerHTML = data.name;
       }
-      userTag.innerHTML = "@" + data.tag;
+      userTag.innerHTML = "@" + data.login;
       joinDate.innerHTML = "Joined " + joindate;
       description.innerHTML = data.bio;
       if (data.bio === null) {
