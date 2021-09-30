@@ -288,3 +288,13 @@ body {
     }
   }
 }
+
+@media screen and (max-height: 700px) {
+  .website-content {
+    margin-top: 1%;
+  }
+
+  .main-container {
+    margin-bottom: 2rem;
+  }
+}
