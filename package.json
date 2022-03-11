@@ -1,0 +1,44 @@
+{
+	"name": "github-user-information",
+	"version": "1.0.0",
+	"description": "![Design preview for the GitHub user search app coding challenge](./preview.jpg)",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest --env=jsdom --watch",
+		"coverage": "jest --env=jsdom --coverage"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MirceaDumitrescu/Github-user-information.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/MirceaDumitrescu/Github-user-information/issues"
+	},
+	"homepage": "https://github.com/MirceaDumitrescu/Github-user-information#readme",
+	"devDependencies": {
+		"@babel/plugin-transform-runtime": "^7.17.0",
+		"@babel/preset-env": "^7.16.11",
+		"@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+		"jest": "^27.5.1",
+		"jest-fetch-mock": "^3.0.3"
+	},
+	"dependencies": {
+		"babel-jest": "^27.5.1",
+		"cross-fetch": "^3.1.5",
+		"dom-parser": "^0.1.6",
+		"enzyme": "^3.11.0",
+		"moment": "^2.29.1",
+		"node-fetch": "^3.2.2",
+		"regenerator-runtime": "^0.13.9",
+		"ts-jest": "^27.1.3"
+	},
+	"jest": {
+		"automock": false,
+		"setupFilesAfterEnv": [
+			"./setup.js"
+		]
+	}
+}
